@@ -1,0 +1,262 @@
+/*All*/
+body
+{
+	text-align: center;
+}
+
+p
+{
+	text-align: left;
+}
+
+
+/*Nav*/
+
+nav
+{
+	background-color: #3D4A60;
+	color: #FFF;
+	border-radius: 1rem;
+}
+
+nav ul
+{
+	list-style: none;
+	margin: auto;
+	padding: 1%;
+}
+
+#name
+{
+	font-weight: 700;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.navLinks
+{
+	text-decoration: none;
+	color: #FFF;
+}
+
+.navLinks:hover
+{
+	background-color: #FFF;
+	color: #3D4A60;
+	border-radius: 1rem;
+}
+
+
+/*About*/
+#myPicture
+{
+	width: 50%;
+}
+
+
+
+/*Portfolio*/
+#portfolio
+{
+	background-color: #3d4a60;
+	text-align: center;
+	padding: 5%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));	
+}
+
+.portfolioImg
+{
+	width: 250px;
+	height: 250px;
+	margin: 2%;
+	border: 3px solid #fff;
+	border-radius: 25px;
+	box-shadow: 1px 1px 1px #fff;
+}
+
+
+
+/*Contact*/
+#contact
+{
+	display: grid;
+	margin: 2% 0;
+}
+
+button
+{
+	padding: 5% 1%;
+	width: 80%;
+	margin: 2.5% auto;
+	border-radius: 1rem;
+	color: #FFF;
+}
+
+#email
+{
+	background-color: #3D4A60;
+}
+
+#facebook
+{
+	background-color: #4267b2;
+}
+
+#linkedIn
+{
+	background-color: #283e4a;
+}
+
+#gitHub
+{
+	background-color: #24292e;
+}
+
+#freeCodeCamp
+{
+	background-color: #0A0A23;
+}
+
+#youTube
+{
+	background-color: #C00;
+}
+
+/*Footer*/
+footer p
+{
+	text-align: center;
+}
+
+
+
+/*Other*/
+
+hr
+{
+    border: 0;
+    height: 5px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #3d4a60, rgba(0, 0, 0, 0));
+    margin: 2% 0;
+}
+
+
+
+
+
+
+
+
+
+/*Small Screen*/
+@media only screen and (max-width: 600px)
+{
+	/*Nav*/
+	nav
+	{
+		text-align: center;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+/*Medium Screen*/
+@media only screen and (min-width: 600px)
+{
+	#wrapper
+	{
+		width: 80%;
+		margin: auto;
+	}
+
+	/*Nav*/
+	nav ul
+	{
+		display: inline-flex;
+	}
+	nav ul li
+	{
+		margin: 0 20px;
+	}
+	#name
+	{
+		margin-right: auto;
+	}
+
+	/*About*/
+	#aboutContainer
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	#myPicture
+	{
+		width: 75%;
+		margin: 0 auto;
+	}
+
+	/*Contacts*/
+	#contact
+	{
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+
+
+
+
+
+
+
+
+/*Large Screen*/
+@media only screen and (min-width: 1225px)
+{
+	/*All*/
+	#wrapper
+	{
+		width: 75%;
+		margin: auto;
+	}
+
+	/*Nav*/
+ nav ul
+	{
+		width: 90%;
+	}
+
+	#Name
+	{
+		margin-right: auto;
+	}
+
+	/*About*/
+	#aboutContainer
+	{
+		display: inline-flex;
+		text-align: left;
+	}
+
+	#myPicture
+	{
+		width: 25%;
+		margin: 0 2.5%;
+	}
+
+	/*Contacts*/
+	#contact
+	{
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
